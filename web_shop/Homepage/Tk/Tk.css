@@ -1,0 +1,26 @@
+#container{
+    padding-top:7%;
+}
+#form{
+    width: 35%;
+}
+#checkbox{
+    margin-left: 45%;
+}
+@media screen and (max-width: 768px) {
+    #checkbox{
+        margin-left: 10%;
+    }
+    #form{
+    width: 80%;
+    }
+    #container{
+    padding-top:35%;
+    width: 80%;
+    }
+}
+@media screen and (max-hieght: 500px) {
+    #container{
+    padding-top:50%;
+    }
+}

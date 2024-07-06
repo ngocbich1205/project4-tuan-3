@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function submit() {
+            document.getElementById('myform').submit();
+        }
+        window.onload = function() {
+            Swal.fire(
+                'Good job!',
+                'You the button!',
+                'success'
+            );
+            setTimeout(function() {
+                window.location.href = 'giohang/del.php';
+            }, 2000);
+        }
+        window.onload = function() {
+            Swal.fire({
+                title: 'Cảm Ơn Bạn đã Mua Hàng',
+                text: "Bạn Có Muốn Xem Đơn Hàng Không",
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = 'giohang/del.php?id=donhang';
+                } else {
+                    window.location.href = 'giohang/del.php';
+                }
+            })
+        }
+    </script>
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>

@@ -1,0 +1,177 @@
+.tieude {
+    font-size: 18px;
+    width: 40%;
+}
+
+td {
+    font-size: 20px;
+    text-align: left;
+}
+
+h4 {
+    color: black;
+}
+
+.modal-header {
+    color: white;
+    background-color: #F44336;
+}
+
+table,
+th,
+td {
+    /*border: 1px solid red;*/
+    /*border-collapse: collapse;*/
+    margin: 0%;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+table,
+th {
+    width: 40%;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+table,
+td {
+    width: 50%;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+th img {
+    width: 80%;
+}
+
+.gia {
+    text-align: center;
+    font-size: 32px;
+    color: red;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.btn_1 {
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid #ff6060;
+    border-radius: 5px;
+    background-color: #ff6060;
+    width: 23%;
+    height: 60px;
+    font-size: 14px
+}
+
+.btn_2 {
+    width: 23%;
+    height: 60px;
+    margin: 10px;
+    font-size: 14px;
+    padding: 5px;
+    border: 5px solid #4d86fd;
+    border-radius: 5px;
+    background-color: #4d86fd;
+}
+
+:hover.btn_2 {
+    border: 5px solid #127bfc;
+    background-color: #127bfc;
+}
+
+:hover.btn_1 {
+    border: 5px solid red;
+    background-color: red;
+}
+
+.dropbtn {
+    padding-top: 5px;
+    font-size: 25px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #bbbfbd;
+}
+
+.show {
+    right: -20px;
+    display: block;
+}
+
+label {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 14px;
+    }
+    table,
+    th,
+    td {
+        margin: 0%;
+        margin-top: 15%;
+        padding: 1%;
+    }
+    table,
+    th {
+        width: 50%;
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+    td {
+        font-size: 10px;
+        text-align: left;
+    }
+    th img {
+        width: 95%;
+        height: 200px;
+        padding-bottom: 30px;
+    }
+    #quay {
+        display: none;
+    }
+    .gia {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .btn_1 {
+        height: 40px;
+        width: 43%;
+    }
+    .btn_2 {
+        height: 40px;
+        width: 43%;
+    }
+    .chitiet {
+        font-size: 16px;
+    }
+}

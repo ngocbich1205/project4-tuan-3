@@ -1,0 +1,123 @@
+body {
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.main {
+    width: 1500px;
+    height: max-content;
+    min-height: 100vh;
+    max-width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(0, 146, 51);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding-top: 10px
+}
+
+.nav__link {
+    width: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 30px;
+    display: block;
+}
+
+.nav__mobile-list {
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav__mobile-link button {
+    color: #333;
+}
+
+.nav__mobile-link:hover {
+    background-color: darkgray;
+    color: #fff;
+}
+
+.nav__mobile-close {
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.nav_bars-btn {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    left: 10px;
+    display: none;
+    margin-right: 10px;
+}
+
+button {
+    border: 0px;
+}
+
+.nav__menu {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    background-color: beige;
+    opacity: 1;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.menu__hien:checked~.nav__menu {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.menu__hien:checked~h1 {
+    color: red;
+}
+
+.hienthi__noidung {
+    margin-top: 80px;
+    margin-left: 300px;
+}
+
+@media screen and (max-width: 1069px) {
+    .nav_bars-btn {
+        display: block;
+    }
+    .nav__menu {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    .hienthi__noidung {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,364 @@
+body {
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.main {
+    width: 1500px;
+    height: max-content;
+    min-height: 100vh;
+    max-width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(0, 146, 51);
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding-top: 10px
+}
+
+.nav__link {
+    width: auto;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 30px;
+    display: block;
+}
+
+
+/* Article */
+
+.nav_bars-btn {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    position: fixed;
+    left: 10px;
+    display: none;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: hien 0.3s linear;
+}
+
+.nav__overlay_dangky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: hien 0.3s linear;
+}
+
+.nav__overlay_login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: hien 0.3s linear;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.nav__mobile-list {
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nav__mobile-link button {
+    color: #333;
+}
+
+.nav__mobile-link:hover {
+    background-color: darkgray;
+    color: #fff;
+}
+
+.nav__mobile-close {
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.nav__input:checked~h1 {
+    color: #fff;
+}
+
+.nav__input:checked~.nav__overlay {
+    display: block;
+}
+
+.nav__input:checked~.nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav__search {
+    height: 30px;
+}
+
+.nav__cart {
+    position: fixed;
+    display: block;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    padding-bottom: 2px;
+    right: 15px;
+}
+
+.nav__sl {
+    display: block;
+    position: relative;
+    bottom: 34px;
+    left: 15px;
+}
+
+.dangnhap__pc {
+    top: 0;
+    position: fixed;
+    background-color: lemonchiffon;
+    display: block;
+    height: 400px;
+    left: 28%;
+    right: 28%;
+    border-radius: 10px;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.dangnhap__pc-input:checked~.nav__overlay_login {
+    display: block;
+}
+
+.dangnhap__pc-input:checked~.dangnhap__pc {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.clickon__pc {
+    cursor: pointer;
+    color: #fff;
+}
+
+.dangky__pc {
+    position: fixed;
+    background-color: lemonchiffon;
+    display: block;
+    left: 28%;
+    right: 28%;
+    border-radius: 10px;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.dangky__pc-input:checked~.nav__overlay_dangky {
+    display: block;
+}
+
+.dangky__pc-input:checked~.dangky__pc {
+    transform: translateY(15%);
+    opacity: 1;
+}
+
+.xinchao__pc {
+    margin-left: 150px;
+    width: 230px;
+}
+
+.lendau__pc__mobile {
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+:hover.lendau__pc__mobile {
+    background-color: rgb(0, 94, 255);
+}
+
+.hienmk {
+    margin-right: 40%;
+}
+
+.footer_pc {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    background-color: darkgray;
+}
+
+@media screen and (min-width:1240px) and (max-width:1999px) {
+    .dangnhap__pc {
+        top: 150px;
+        left: 32%;
+        right: 32%;
+    }
+    .dangky__pc {
+        top: 0px;
+        height: 600px;
+    }
+    .xinchao__pc {
+        margin-left: 10px;
+    }
+}
+
+:hover.xemthem__sp {
+    border: red 1px solid;
+}
+
+input.xemthem__sp {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px darkgrey;
+    margin-left: 35%;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+#menu__pc a {
+    width: 65px;
+}
+
+@media screen and (min-width:1023px) and (max-width:1240px) {
+    .xinchao__pc {
+        display: none;
+    }
+    .dangnhap__pc {
+        top: 150px;
+    }
+    .dangky__pc {
+        top: 5px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #menu__pc {
+        display: none;
+    }
+    .xinchao__pc {
+        display: none;
+    }
+    .dangnhap__pc {
+        top: 100px;
+    }
+    .dangky__pc {
+        top: 10px;
+        left: 20%;
+        right: 20%;
+    }
+    .xinchao__pc {
+        margin-left: 0px;
+    }
+    .hienmk {
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 768px) {
+    .nav_bars-btn {
+        display: block;
+    }
+    .nav__pc {
+        display: none;
+    }
+    .dangnhap__pc {
+        position: fixed;
+        left: 10%;
+        right: 10%;
+        height: 450px;
+        margin-top: 100px;
+        display: block;
+    }
+    .dangky__pc {
+        height: 600px;
+        left: 2%;
+        right: 2%;
+        top: 10px;
+    }
+    input.xemthem__sp {
+        width: 40%;
+        margin-left: 30%;
+    }
+    .hienmk {
+        margin-right: 10%;
+    }
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    height: 35px;
+    font-size: 14px;
+    margin: 10px 2px;
+    opacity: 0.6;
+    transition: 0.8s;
+}
+
+.btn:hover {
+    opacity: 1
+}
+
+@keyframes hien {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
